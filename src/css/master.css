@@ -181,13 +181,21 @@ section.my-works a h3{
 section.my-footer{
   /*background-color: #EFDAB3;*/
   background-color: #04151F;
-  padding: 2em 0em;
+  padding: 1em 0em;
   color: #EFE5D2;
+}
+
+section.my-footer p{
+  margin: 0.5em;
 }
 
 section.my-footer p span{
   font-weight: bold;
   color: #BB4430;
+}
+
+section.my-footer p i[class*="fa-"]{
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 64em) {
