@@ -189,3 +189,58 @@ section.my-footer p span{
   font-weight: bold;
   color: #BB4430;
 }
+
+@media only screen and (min-width: 64em) {
+  h1{
+    font-size: 2.5em;
+  }
+
+  .gridcontainer{
+    padding: 1em 2em;
+  }
+
+  section.my-background .dis-tcell h1{
+    font-size: 3em;
+    margin: 0;
+  }
+
+  section.my-skills .gridcontainer .skillcopy{
+    margin: 4em 2em;
+  }
+
+  section.my-skills .gridcontainer .skillcopy h1{
+    font-size: 2.5em;
+  }
+
+  section.my-skills .gridcontainer .skillcopy h3{
+    font-size: 1.2em;
+  }
+
+  section.my-skills .gridcontainer .canvascontainer{
+    height: 80%;
+    margin: 0;
+  }
+
+  section.my-testimonial .gridcontainer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+  }
+
+  section.my-skills .gridcontainer{
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  section.my-works .gridcontainer{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  section.my-works .gridcontainer div .workprev{
+    height: 20vw;
+  }
+
+  section.my-works .workitem{
+      margin: 0 2em;
+  }
+}
