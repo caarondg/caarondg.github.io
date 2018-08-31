@@ -230,7 +230,7 @@ section.my-footer p i[class*="fa-"]{
   }
 
   section.my-testimonial .gridcontainer{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 3em;
   }
 
