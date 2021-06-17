@@ -1,0 +1,26 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply font-roboto bg-gray text-black-200;
+}
+
+h1 {
+  @apply font-caveat text-6xl leading-tight;
+}
+
+h2 {
+  @apply font-caveat leading-tight;
+}
+
+h3 {
+  @apply font-caveat leading-tight;
+}
+
+h4 {
+  @apply font-caveat leading-tight;
+}

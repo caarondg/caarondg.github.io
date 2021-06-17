@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \************************************/
 /***/ (function() {
 
-eval("console.log('Hello world');\n\n\n//# sourceURL=webpack://caarondg.github.io/./src/assets/scripts/main.js?");
+eval("console.log('Hello world');\r\n\n\n//# sourceURL=webpack://caarondg.github.io/./src/assets/scripts/main.js?");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ eval("console.log('Hello world');\n\n\n//# sourceURL=webpack://caarondg.github.i
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/styles/main.scss */ \"./src/assets/styles/main.scss\");\n/* harmony import */ var _assets_scripts_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/scripts/main.js */ \"./src/assets/scripts/main.js\");\n/* harmony import */ var _assets_scripts_main_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_scripts_main_js__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\n//# sourceURL=webpack://caarondg.github.io/./src/component.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/styles/main.scss */ \"./src/assets/styles/main.scss\");\n/* harmony import */ var _assets_scripts_main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/scripts/main.js */ \"./src/assets/scripts/main.js\");\n/* harmony import */ var _assets_scripts_main_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_scripts_main_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\n\n//# sourceURL=webpack://caarondg.github.io/./src/component.js?");
 
 /***/ })
 
