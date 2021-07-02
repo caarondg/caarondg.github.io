@@ -19591,6 +19591,15 @@ h4 {
   line-height: 1.25;
 }
 
+footer {
+  --tw-bg-opacity: 1;
+  background-color: rgba(33, 37, 69, var(--tw-bg-opacity));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 section.sec-hero {
   display: -webkit-box;
   display: -ms-flexbox;
