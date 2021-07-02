@@ -27,7 +27,15 @@ module.exports = {
         200: '#fdf1cc',
       },
     },
-    extend: {},
+    extend: {
+      zIndex: {
+        '1': 1,
+        '5': 5,
+        '25': 25,
+        '75': 75,
+        '100': 100,
+      },
+    },
   },
   variants: {
     extend: {},

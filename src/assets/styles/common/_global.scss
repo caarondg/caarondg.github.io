@@ -6,19 +6,19 @@
 }
 
 body {
-  @apply font-roboto bg-gray text-black-200;
+  @apply font-caveat bg-gray text-black-200;
 }
 
 h1 {
-  @apply font-caveat text-6xl leading-tight;
+  @apply font-caveat text-8xl leading-tight;
 }
 
 h2 {
-  @apply font-caveat leading-tight;
+  @apply font-caveat text-6xl leading-tight;
 }
 
 h3 {
-  @apply font-caveat leading-tight;
+  @apply font-caveat text-4xl leading-tight;
 }
 
 h4 {

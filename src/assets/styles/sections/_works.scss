@@ -1,0 +1,79 @@
+section.sec-works {
+  @apply my-12;
+
+  @screen lg {
+    @apply my-32;
+  }
+
+  .side-title {
+    @apply w-full px-4;
+
+    @screen lg {
+      @apply flex-shrink-0;
+
+      width: 250px;
+    }
+  }
+
+  .inner-title {
+    @apply font-caveat transform rotate-90 origin-center whitespace-nowrap;
+
+    font-size: 13rem;
+  }
+
+  .side-content {
+    @apply w-full px-4;
+
+    @screen lg {
+      @apply w-1/2 flex-grow;
+    }
+  }
+
+  .tiles-wrapper {
+    @apply py-12 flex flex-wrap;
+
+    @screen lg {
+      @apply py-32;
+    }
+  }
+
+  .tile-inner {
+    @apply w-full;
+
+    padding-bottom: 100%;
+  }
+
+  .image-wrapper {
+    @apply absolute w-full h-full inset-0;
+  }
+
+  .image {
+    @apply absolute w-full h-full inset-0 object-cover;
+  }
+
+  .copy-wrapper {
+    @apply text-white absolute w-full h-full inset-0 flex items-center justify-center p-4 z-5 opacity-0 pointer-events-none duration-300;
+  }
+
+  .dimmer {
+    @apply bg-black-100 bg-opacity-70 absolute w-full h-full inset-0 z-1 opacity-0 duration-300;
+  }
+
+  .single-tile {
+    @apply relative w-full;
+
+    @screen lg {
+      @apply w-1/3;
+    }
+
+    &:hover {
+      .dimmer {
+        @apply opacity-100;
+      }
+
+      .copy-wrapper {
+        @apply opacity-100;
+      }
+    }
+  }
+}
