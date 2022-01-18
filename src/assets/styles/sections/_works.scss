@@ -16,9 +16,15 @@ section.sec-works {
   }
 
   .inner-title {
-    @apply font-caveat transform rotate-90 origin-center whitespace-nowrap;
+    @apply font-caveat text-6xl;
 
-    font-size: 13rem;
+
+
+    @screen lg {
+      @apply transform rotate-90 origin-center whitespace-nowrap;
+
+      font-size: 13rem;
+    }
   }
 
   .side-content {
