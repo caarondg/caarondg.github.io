@@ -1,0 +1,59 @@
+section.sec-about {
+  @apply my-12;
+
+  @screen lg {
+    @apply my-32;
+  }
+
+  .side-title {
+    @apply w-full px-4;
+
+    @screen lg {
+      @apply flex-shrink-0;
+
+      width: 250px;
+    }
+  }
+
+  .inner-title {
+    @apply font-caveat text-6xl;
+
+    @screen lg {
+      @apply whitespace-nowrap transform -rotate-90 translate-y-full origin-center;
+
+      font-size: 13rem;
+    }
+  }
+
+  .side-content {
+    @apply w-full px-4;
+
+    @screen lg {
+      @apply w-1/2 flex-grow;
+    }
+  }
+
+  .single-expertise {
+    @apply text-left;
+
+    &:nth-child(even) {
+      @apply text-right;
+    }
+
+    &:not(:last-child) {
+      @apply mb-12;
+    }
+  }
+
+  .title {
+    @apply text-4xl;
+
+    @screen lg {
+      @apply text-6xl;
+    }
+  }
+
+  .short-description {
+    @apply text-2xl;
+  }
+}

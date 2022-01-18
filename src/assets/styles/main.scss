@@ -1,0 +1,15 @@
+// Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Common
+@import "./common/global";
+
+// Partials
+@import "./partials/footer";
+
+// Sections
+@import "./sections/hero";
+@import "./sections/about";
+@import "./sections/works";
