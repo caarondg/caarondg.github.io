@@ -16,9 +16,13 @@ section.sec-about {
   }
 
   .inner-title {
-    @apply font-caveat transform -rotate-90 translate-y-full origin-center whitespace-nowrap;
+    @apply font-roboto-slab text-6xl;
 
-    font-size: 13rem;
+    @screen lg {
+      @apply whitespace-nowrap transform -rotate-90 translate-y-full origin-center;
+
+      font-size: 13rem;
+    }
   }
 
   .side-content {
@@ -42,7 +46,11 @@ section.sec-about {
   }
 
   .title {
-    @apply text-6xl;
+    @apply text-4xl;
+
+    @screen lg {
+      @apply text-6xl;
+    }
   }
 
   .short-description {
