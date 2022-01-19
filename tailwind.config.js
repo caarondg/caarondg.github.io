@@ -37,6 +37,7 @@ module.exports = {
       gold: {
         100: '#b89a73',
       },
+      transparent: 'transparent',
     },
     extend: {
       zIndex: {

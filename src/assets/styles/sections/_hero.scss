@@ -1,5 +1,20 @@
 section.sec-hero {
-  @apply relative flex items-center justify-center;
+  @apply relative flex items-center justify-center overflow-visible;
 
   height: calc(100vh - 60px);
+
+  .background-image {
+    @apply absolute w-full h-full inset-0;
+  }
+
+  .gradient-dimmer {
+    @apply absolute w-full h-full bottom-0 left-0 bg-gradient-to-t from-black-300 to-transparent;
+  }
+
+  .graphic {
+    @apply absolute w-full h-full opacity-30;
+
+    right: -50%;
+    bottom: -20%;
+  }
 }
