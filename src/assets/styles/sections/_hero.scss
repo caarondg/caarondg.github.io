@@ -1,3 +1,5 @@
 section.sec-hero {
-  @apply relative flex items-center justify-center h-screen;
+  @apply relative flex items-center justify-center;
+
+  height: calc(100vh - 60px);
 }

@@ -16,7 +16,7 @@ section.sec-about {
   }
 
   .inner-title {
-    @apply font-caveat text-6xl;
+    @apply font-roboto-slab text-6xl;
 
     @screen lg {
       @apply whitespace-nowrap transform -rotate-90 translate-y-full origin-center;

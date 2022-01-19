@@ -16,9 +16,7 @@ section.sec-works {
   }
 
   .inner-title {
-    @apply font-caveat text-6xl;
-
-
+    @apply font-roboto-slab text-6xl;
 
     @screen lg {
       @apply transform rotate-90 origin-center whitespace-nowrap;
@@ -58,7 +56,7 @@ section.sec-works {
   }
 
   .copy-wrapper {
-    @apply text-white absolute w-full h-full inset-0 flex items-center justify-center p-4 z-5 opacity-0 pointer-events-none duration-300;
+    @apply text-white-100 absolute w-full h-full inset-0 flex items-center justify-center p-4 z-5 opacity-0 pointer-events-none duration-300;
   }
 
   .dimmer {
