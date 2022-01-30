@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Overlay from './components/overlay';
-import Hero from './components/hero';
-import Works from './components/works';
-import About from './components/about';
-import Footer from './components/footer';
+import Overlay from './pages/overlay';
+import Hero from './pages/hero';
+import Works from './pages/works';
+import About from './pages/about';
+import Footer from './pages/footer';
 
 const App = () => {
   return (

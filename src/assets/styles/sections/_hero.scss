@@ -12,9 +12,25 @@ section.sec-hero {
   }
 
   .graphic {
-    @apply absolute w-full h-full opacity-30;
+    @apply absolute w-full h-full opacity-30 pointer-events-none;
 
     right: -50%;
     bottom: -20%;
+  }
+
+  .graphic-image {
+    @apply origin-center;
+
+    animation: 30s infinite linear rotation;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 }

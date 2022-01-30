@@ -5,79 +5,68 @@ section.sec-works {
     @apply my-32;
   }
 
-  .side-title {
-    @apply w-full px-4;
-
-    @screen lg {
-      @apply flex-shrink-0;
-
-      width: 250px;
-    }
+  .works-container {
+    @apply flex -mx-4;
   }
 
-  .inner-title {
-    @apply font-roboto-slab text-6xl;
-
-    @screen lg {
-      @apply transform rotate-90 origin-center whitespace-nowrap;
-
-      font-size: 13rem;
-    }
-  }
-
-  .side-content {
-    @apply w-full px-4;
-
-    @screen lg {
-      @apply w-1/2 flex-grow;
-    }
-  }
-
-  .tiles-wrapper {
-    @apply py-12 flex flex-wrap;
-
-    @screen lg {
-      @apply py-32;
-    }
-  }
-
-  .tile-inner {
-    @apply w-full;
-
-    padding-bottom: 100%;
-  }
-
-  .image-wrapper {
-    @apply absolute w-full h-full inset-0;
-  }
-
-  .image {
-    @apply absolute w-full h-full inset-0 object-cover;
-  }
-
-  .copy-wrapper {
-    @apply text-white-100 absolute w-full h-full inset-0 flex items-center justify-center p-4 z-5 opacity-0 pointer-events-none duration-300;
-  }
-
-  .dimmer {
-    @apply bg-black-100 bg-opacity-70 absolute w-full h-full inset-0 z-1 opacity-0 duration-300;
-  }
-
-  .single-tile {
-    @apply relative w-full;
+  .work-item {
+    @apply w-1/2 px-4 my-8;
 
     @screen lg {
       @apply w-1/3;
     }
+  }
+
+  .card {
+    @apply block relative w-full bg-black-300 shadow-lg cursor-pointer;
+
+    padding-bottom: 100%;
+
+    .card-dimmer {
+      @apply absolute w-full h-full inset-0 bg-blue-100 bg-opacity-50 opacity-0 duration-300;
+    }
+
+    .card-border {
+      @apply absolute top-1/2 left-1/2 border border-gold-100 rounded-xl opacity-0 transform -translate-x-1/2 -translate-y-1/2 scale-90 duration-300;
+
+      width: 90%;
+      height: 90%;
+    }
+
+    .card-name {
+      @apply absolute w-full h-full inset-0 flex items-center justify-center text-center text-white-100 opacity-0 duration-300;
+    }
 
     &:hover {
-      .dimmer {
+      .card-dimmer {
         @apply opacity-100;
       }
 
-      .copy-wrapper {
+      .card-border {
+        @apply scale-100 opacity-100;
+      }
+
+      .card-name {
         @apply opacity-100;
       }
+    }
+  }
+
+  .work-modal {
+    @apply fixed w-screen h-screen inset-0 z-20 pointer-events-none opacity-0 duration-300;
+
+    .modal-wrapper {
+      @apply absolute w-full h-full inset-0 bg-blue-400 bg-opacity-90 flex items-center justify-center p-6;
+    }
+
+    .modal-inner {
+      @apply w-full bg-black-200 text-white-100 p-4 rounded-xl;
+
+      max-width: 1000px;
+    }
+
+    &.show {
+      @apply opacity-100 pointer-events-auto;
     }
   }
 }
