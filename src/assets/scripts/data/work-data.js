@@ -5,8 +5,8 @@ export const WorkData = [
     "description": "Site description here",
     "contribution": "Contributed in frontend development using technology A, B, C, with tools D, E, F",
     "images": {
-      "desktop": "",
-      "mobile": ""
+      "desktop": "./images/placeholder_image.jpg",
+      "mobile": "./images/placeholder_image.jpg"
     },
     "technology": ["HTML", "CSS", "JavaScript"]
   },
@@ -16,7 +16,7 @@ export const WorkData = [
     "description": "Site description here 2",
     "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
     "images": {
-      "desktop": "",
+      "desktop": "./images/placeholder_image.jpg",
       "mobile": ""
     },
     "technology": ["HTML", "CSS", "JavaScript"]

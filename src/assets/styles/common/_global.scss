@@ -5,6 +5,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  @screen lg {
+    @supports (overflow-y: overlay) {
+      overflow-y: overlay;
+    }
+
+    @supports not (overflow-y: overlay) {
+      overflow-y: auto;
+    }
+  }
+}
+
 body {
   @apply font-roboto font-thin bg-black-300 text-gold-100;
 }
@@ -51,5 +63,9 @@ h3 {
 #app {
   @apply overflow-hidden;
 
-  padding: 30px;
+  padding: 15px;
+
+  @screen lg {
+    padding: 30px;
+  }
 }

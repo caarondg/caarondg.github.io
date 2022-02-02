@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react';
 
 const Hero = () => {
   return (
@@ -14,9 +14,10 @@ const Hero = () => {
       </div>
 
       <div className="container relative">
-        <h1 className="text-center">
-          My name is Aaron <br /> And I'm a <span>&lt; Web Developer /&gt;</span>
-        </h1>
+        <div className="heading-wrapper sr-item">
+          <h1 className="text-center">I'm Aaron.</h1>
+          <div className="font-roboto-slab text-center text-5xl mt-2 mb-4">And I'm a Web Developer</div>
+        </div>
       </div>
     </section>
   )

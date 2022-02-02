@@ -4,6 +4,10 @@
   .border {
     @apply absolute w-full h-full inset-0 border-black-100 shadow-gold-inset;
 
-    border-width: 30px;
+    border-width: 15px;
+
+    @screen lg {
+      border-width: 30px;
+    }
   }
 }

@@ -1,0 +1,36 @@
+.work-modal {
+  @apply fixed w-screen h-screen inset-0 z-20 pointer-events-none opacity-0 duration-300;
+
+  .modal-wrapper {
+    @apply absolute w-full h-full inset-0 bg-blue-400 bg-opacity-90 flex items-center justify-center p-6;
+  }
+
+  .modal-outer {
+    @apply bg-black-200 text-white-100 p-4 rounded-xl;
+  }
+
+  .modal-inner {
+    @apply w-full;
+
+    max-width: 1000px;
+    max-height: 75vh;
+
+    @screen lg {
+      @supports (overflow-y: overlay) {
+        overflow-y: overlay;
+      }
+
+      @supports not (overflow-y: overlay) {
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .images-wrapper {
+    @apply relative;
+  }
+
+  &.show {
+    @apply opacity-100 pointer-events-auto;
+  }
+}

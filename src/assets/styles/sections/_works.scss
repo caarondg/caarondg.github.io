@@ -18,7 +18,7 @@ section.sec-works {
   }
 
   .card {
-    @apply block relative w-full bg-black-300 shadow-lg cursor-pointer;
+    @apply block relative w-full bg-blue-200 shadow-lg cursor-pointer;
 
     padding-bottom: 100%;
 
@@ -49,24 +49,6 @@ section.sec-works {
       .card-name {
         @apply opacity-100;
       }
-    }
-  }
-
-  .work-modal {
-    @apply fixed w-screen h-screen inset-0 z-20 pointer-events-none opacity-0 duration-300;
-
-    .modal-wrapper {
-      @apply absolute w-full h-full inset-0 bg-blue-400 bg-opacity-90 flex items-center justify-center p-6;
-    }
-
-    .modal-inner {
-      @apply w-full bg-black-200 text-white-100 p-4 rounded-xl;
-
-      max-width: 1000px;
-    }
-
-    &.show {
-      @apply opacity-100 pointer-events-auto;
     }
   }
 }

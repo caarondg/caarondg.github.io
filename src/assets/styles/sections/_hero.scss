@@ -3,6 +3,10 @@ section.sec-hero {
 
   height: calc(100vh - 60px);
 
+  .heading-wrapper {
+    @apply inline-flex flex-col bg-blue-400 border border-gold-100 py-4 px-12;
+  }
+
   .background-image {
     @apply absolute w-full h-full inset-0;
   }
