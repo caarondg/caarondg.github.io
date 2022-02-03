@@ -1,10 +1,18 @@
 section.sec-hero {
   @apply relative flex items-center justify-center overflow-visible;
 
-  height: calc(100vh - 60px);
+  height: 60vh;
+
+  @screen lg {
+    height: calc(100vh - 60px);
+  }
 
   .heading-wrapper {
-    @apply inline-flex flex-col bg-blue-400 border border-gold-100 py-4 px-12;
+    @apply inline-flex flex-col bg-blue-400 border border-gold-100 py-4 px-4;
+
+    @screen lg {
+      @apply px-12;
+    }
   }
 
   .background-image {
@@ -25,7 +33,7 @@ section.sec-hero {
   .graphic-image {
     @apply origin-center;
 
-    animation: 30s infinite linear rotation;
+    animation: 40s infinite linear rotation;
   }
 
   @keyframes rotation {

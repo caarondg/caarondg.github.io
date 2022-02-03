@@ -1,7 +1,7 @@
 .app-overlay {
   @apply fixed w-full h-full inset-0 pointer-events-none z-50;
 
-  .border {
+  .overlay-border {
     @apply absolute w-full h-full inset-0 border-black-100 shadow-gold-inset;
 
     border-width: 15px;
@@ -9,5 +9,36 @@
     @screen lg {
       border-width: 30px;
     }
+  }
+
+  .sidebar-socials {
+    @apply hidden absolute flex-col top-1/2 transform -translate-y-1/2;
+
+    width: 38px;
+    left: 10px;
+
+    @screen lg {
+      @apply flex;
+    }
+  }
+
+  .social-icon {
+    @apply relative inline-block my-4 pointer-events-auto;
+
+    .icon-bg {
+      @apply w-full inset-0 bg-blue-400 border border-gold-100 transform rotate-45 duration-100;
+
+      padding-bottom: 100%;
+    }
+
+    &:hover {
+      .icon-bg {
+        @apply bg-blue-100
+      }
+    }
+  }
+
+  .icon {
+    @apply absolute w-3/5 h-3/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-contain;
   }
 }

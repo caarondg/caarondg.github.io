@@ -11,6 +11,12 @@ const WorkItem: React.FC<WorkItemProps> = ({ handleModal, data }) => {
   return (
     <div className="work-item">
       <div className="card" onClick={() => handleModal(data)}>
+        { data.images.preview &&
+          <div className="preview-image-wrapper">
+            <img src={data.images.preview} alt="preview" className="preview-image" />
+          </div>
+        }
+
         <div className="dimmer"></div>
         <div className="card-dimmer"></div>
         <div className="card-border"></div>
@@ -25,10 +31,12 @@ WorkItem.defaultProps = {
     id: 0,
     name: 'test',
     images: {
-      desktop: '',
-      mobile: '',
+      base: '',
+      mock: '',
+      preview: '',
     },
-    technology: ['test']
+    technology: ['test'],
+    url: '',
   }
 }
 

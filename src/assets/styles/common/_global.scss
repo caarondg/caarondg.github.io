@@ -29,7 +29,7 @@ h4 {
 }
 
 h1 {
-  @apply text-6xl;
+  @apply text-4xl;
 
   @screen lg {
     @apply text-8xl;
@@ -45,10 +45,32 @@ h2 {
 }
 
 h3 {
-  @apply text-3xl;
+  @apply text-lg;
 
   @screen lg {
     @apply text-4xl;
+  }
+}
+
+ul {
+
+}
+
+li {
+  @apply relative pl-6;
+
+  &::before {
+    @apply absolute rounded-full border border-gold-100;
+
+    content: '';
+    width: 8px;
+    height: 8px;
+    left: 1px;
+    top: 7px;
+  }
+
+  &:not(:first-child) {
+    @apply mt-4;
   }
 }
 
@@ -57,7 +79,7 @@ h3 {
 }
 
 .dimmer {
-  @apply absolute w-full h-full inset-0 bg-black-300 bg-opacity-70;
+  @apply absolute w-full h-full inset-0 bg-black-300 bg-opacity-10;
 }
 
 #app {

@@ -4,8 +4,10 @@ export default interface WorkDataProps {
   description?: string;
   contribution?: string;
   images: {
-    desktop: string,
-    mobile: string,
+    base: string,
+    mock: string,
+    preview: string,
   };
   technology: string[];
+  url: string;
 }

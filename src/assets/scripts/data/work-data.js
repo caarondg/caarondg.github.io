@@ -1,24 +1,106 @@
 export const WorkData = [
   {
     "id": 1,
-    "name": "Site name",
+    "name": "BRC Asia",
     "description": "Site description here",
     "contribution": "Contributed in frontend development using technology A, B, C, with tools D, E, F",
     "images": {
-      "desktop": "./images/placeholder_image.jpg",
-      "mobile": "./images/placeholder_image.jpg"
+      "base": "./images/works/mockup_base.jpg",
+      "mock": "./images/works/brc_mock.png",
+      "preview": "./images/works/brc_preview.jpg",
     },
-    "technology": ["HTML", "CSS", "JavaScript"]
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://www.brc.com.sg/",
   },
   {
     "id": 2,
-    "name": "Site name 2",
+    "name": "Sedgwick Richardson",
     "description": "Site description here 2",
     "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
     "images": {
-      "desktop": "./images/placeholder_image.jpg",
-      "mobile": ""
+      "base": "./images/works/mockup_base.jpg",
+      "mock": "./images/works/sr_mock.png",
+      "preview": "./images/works/sr_preview.jpg",
     },
-    "technology": ["HTML", "CSS", "JavaScript"]
-  }
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://www.sedgwick-richardson.com/",
+  },
+  {
+    "id": 3,
+    "name": "Rock Solid Digital",
+    "description": "Site description here 2",
+    "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
+    "images": {
+      "base": "./images/works/mockup_base.jpg",
+      "mock": "./images/works/rcksld_mock.png",
+      "preview": "./images/works/rcksld_preview.jpg",
+    },
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://www.rcksld.com/",
+  },
+  {
+    "id": 4,
+    "name": "Wordpress Bulletin Plugin",
+    "description": "Site description here 2",
+    "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
+    "images": {
+      "base": "./images/works/mockup_base.jpg",
+      "mock": "./images/works/bulletin_mock.png",
+      "preview": "./images/works/bulletin_preview.jpg",
+    },
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://www.bulletin.rocks/",
+  },
+  {
+    "id": 5,
+    "name": "Peak Re",
+    "description": "Site description here 2",
+    "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
+    "images": {
+      "base": "./images/works/mockup_base.jpg",
+      "mock": "./images/works/peakre_mock.png",
+      "preview": "./images/works/peakre_preview.jpg",
+    },
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://www.peak-re.com/",
+  },
+  {
+    "id": 6,
+    "name": "Li & Fung",
+    "description": "Site description here 2",
+    "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
+    "images": {
+      "base": "./images/works/mockup_base.jpg",
+      "mock": "./images/works/lifung_mock.png",
+      "preview": "./images/works/lifung_preview.jpg",
+    },
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://www.lifung.com/",
+  },
+  {
+    "id": 7,
+    "name": "Rydges",
+    "description": "Site description here 2",
+    "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
+    "images": {
+      "base": "./images/works/mockup_base.jpg",
+      "mock": "./images/works/rydges_mock.png",
+      "preview": "./images/works/rydges_preview.jpg",
+    },
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://www.rydges.com/",
+  },
+  {
+    "id": 8,
+    "name": "Event Cinemas App",
+    "description": "Site description here 2",
+    "contribution": "2 Contributed in frontend development using technology A, B, C, with tools D, E, F",
+    "images": {
+      "base": "",
+      "mock": "./images/works/eventapp_mock.png",
+      "preview": "./images/works/eventapp_preview.jpg",
+    },
+    "technology": ["HTML", "CSS", "JavaScript"],
+    "url": "https://play.google.com/store/apps/details?id=com.ahl.eventcinemas&hl=en_AU&gl=US",
+  },
 ];

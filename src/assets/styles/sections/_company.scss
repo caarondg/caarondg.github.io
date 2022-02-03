@@ -1,0 +1,97 @@
+section.sec-company {
+  @apply relative pb-12 text-white-100;
+
+  @screen lg {
+    @apply pb-32;
+  }
+
+  h3 {
+    @apply inline-block relative;
+
+    &::after {
+      @apply w-full block bg-white-100 transform origin-left duration-300;
+
+      content: '';
+      height: 1px;
+
+      @screen lg {
+        @apply scale-x-0;
+      }
+    }
+
+    &:hover {
+      &::after {
+        @apply scale-x-100;
+      }
+    }
+  }
+
+  .gradient-dimmer {
+    @apply absolute w-full h-full bottom-0 left-0 bg-gradient-to-t from-blue-400 to-transparent;
+  }
+
+  .graphic {
+    @apply absolute w-full h-full opacity-30 pointer-events-none;
+
+    left: -30%;
+    bottom: -10%;
+  }
+
+  .graphic-image {
+    @apply origin-center;
+
+    animation: 40s infinite linear rotation;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .offices-wrapper {
+    @apply flex flex-col items-center mt-12;
+
+    @screen lg {
+      @apply items-start;
+    }
+  }
+
+  .office {
+    @apply w-full border bg-black-200 bg-opacity-60 border-gold-100 rounded-lg p-4;
+
+    @screen lg {
+      @apply w-3/5 p-8;
+    }
+
+    &:nth-child(even) {
+      @screen lg {
+        @apply self-end;
+      }
+    }
+
+    &:not(:first-child) {
+      @apply mt-8;
+    }
+  }
+
+  .header-wrapper {
+    @apply flex items-center justify-between;
+  }
+
+  .date {
+    @apply text-sm ml-8;
+
+    @screen lg {
+      @apply text-lg;
+    }
+  }
+
+  .contributions {
+    @apply mt-6;
+  }
+}

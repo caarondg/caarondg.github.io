@@ -33,7 +33,7 @@ const Works = () => {
   return (
     <section className="sec-works">
       <div className="container">
-        <h2 className="mb-8 lg:mb-12 sr-item">Stuff I've worked on</h2>
+        <h2 className="mb-8 lg:mb-12 sr-item">Some stuff I've worked on</h2>
 
         <div className="works-container sr-group">
           {renderWorkItems(WorkData)}

@@ -6,13 +6,14 @@
   }
 
   .modal-outer {
-    @apply bg-black-200 text-white-100 p-4 rounded-xl;
+    @apply w-full bg-black-200 text-white-100 p-4 rounded-xl;
+
+    max-width: 1000px;
   }
 
   .modal-inner {
     @apply w-full;
 
-    max-width: 1000px;
     max-height: 75vh;
 
     @screen lg {
@@ -27,7 +28,37 @@
   }
 
   .images-wrapper {
-    @apply relative;
+    @apply relative w-full;
+  }
+
+  .base-image-wrapper {
+    @apply w-full h-full absolute inset-0;
+  }
+
+  .base-image {
+    @apply absolute w-full h-full inset-0 object-contain;
+  }
+
+  .mock-image-wrapper {
+    @apply relative w-full;
+
+    padding-bottom: 55%;
+  }
+
+  .mock-image {
+    @apply absolute w-full h-full inset-0 object-contain;
+  }
+
+  .technologies {
+    @apply flex justify-center my-4;
+  }
+
+  .tech {
+    @apply border-gold-100 px-4;
+
+    &:not(:first-child) {
+      @apply border-l;
+    }
   }
 
   &.show {
