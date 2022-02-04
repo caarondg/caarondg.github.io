@@ -45,7 +45,7 @@ const WorkModal: React.FC<WorkModalProps> = ({ handleModal, show, data }) => {
               { data.description && <div className="description my-4">{parse(data.description)}</div> }
 
               { data.contribution &&
-                <div className="contribution">
+                <div className="contribution mb-4">
                   <div className="label">Contribution:</div>
                   <div>{parse(data.contribution)}</div>
                 </div>

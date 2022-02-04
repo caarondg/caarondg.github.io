@@ -3,6 +3,10 @@
 
   p {
     @apply indent-6;
+
+    &:not(:first-child) {
+      @apply mt-4;
+    }
   }
 
   a {

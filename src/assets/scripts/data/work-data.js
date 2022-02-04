@@ -3,7 +3,7 @@ export const WorkData = [
     "id": 1,
     "name": "BRC Asia",
     "description": "<p>The official site of BRC Asia. It has a lot of information regarding the company as well as informative animated graphics for their products and history. As a large company site that supports two languages and several recurring sections it was built with the content writer in mind. Giving freedom with what they want to display on each page of the site. With this, we used wordpress with it's new Gutenberg blocks. Additionally since it only provides the basic blocks we coded in our own custom blocks we made using ACF(Advanced Custom Fields).</p>",
-    "contribution": "<p>In this project, I was tasked with the frontend layout, animation, and the creation of some custom blocks. Specifically the blocks with complex functionality and animations such as the milestones block found in <a href=\"https://www.brc.com.sg/about-us/who-we-are/\">here</a>. To make build the website faster I utilized the usage of Swiper JS for the carousels, ScrollReveal for the fade-in animation on scroll, and TailwindCSS as the CSS framework. The site also uses ReactJS to pull, sort, and search in data for the brochures and other downloadable documents</p>",
+    "contribution": "<p>In this project, I was tasked with the frontend layout, animation, and the creation of some custom blocks. Specifically the blocks with complex functionality and animations such as the milestones block found in <a href=\"https://www.brc.com.sg/about-us/who-we-are/\">here</a>. To speed up the development I utilized the usage of Swiper JS for the carousels, ScrollReveal for the fade-in animation on scroll, and TailwindCSS as the CSS framework. The site also uses ReactJS to pull, sort, and search in data for the brochures and other downloadable documents</p>",
     "images": {
       "base": "./images/works/mockup_base.jpg",
       "mock": "./images/works/brc_mock.png",
@@ -41,8 +41,8 @@ export const WorkData = [
   {
     "id": 4,
     "name": "Wordpress Bulletin Plugin",
-    "description": "<p>The site that promotes our own made wordpress plugin. <a href=\"https://wordpress.org/plugins/bulletin-announcements/\">Bulletin</a> is a lightweight plugin that injects announcement banners, sale offers and shop notices into the user's website.</p>",
-    "contribution": "<p>As a small site that we ourselves manage, we didn't really need to change much regarding the content so most of it was hard coded in instead of editable in a dashboard. This was a solo project for me as it was relatively small. I've used our ReactJS + Wordpress Boilerplate to build it.</p><p>For the plugin I did coding on how it appears on the wordpress dashboard, and also how the different layout options (show above header, floating bottom, etc) would render in the frontend and several other display and style related options of the plugin.</p>",
+    "description": "<p>The site that promotes our own made Wordpress plugin. <a href=\"https://wordpress.org/plugins/bulletin-announcements/\">Bulletin</a> is a lightweight plugin that injects announcement banners, sale offers and shop notices into the user's website.</p>",
+    "contribution": "<p>As a small site that we ourselves manage, we didn't really need to change much regarding the content so most of it was hard coded in instead of editable in a dashboard. This was a solo project for me as it was relatively small. I've used our ReactJS + Wordpress Boilerplate to build it.</p><p>For the plugin I did coding on how it appears on the Wordpress dashboard, and also how the different layout options (show above header, floating bottom, etc.) would render in the frontend and several other display and style related options of the plugin.</p>",
     "images": {
       "base": "./images/works/mockup_base.jpg",
       "mock": "./images/works/bulletin_mock.png",
@@ -68,7 +68,7 @@ export const WorkData = [
     "id": 6,
     "name": "Rydges Network",
     "description": "<p>A multi-site wordpress setup for a Hotel and Hospitality chain in Australia & New Zealand. Aside from Rydges we have revamped their different hotel websites such as <a href=\"https://www.qthotels.com/\">QT</a> and <a href=\"https://www.aturahotels.com/\">Atura</a></p>",
-    "contribution": "Being an existing site when I got on board with Rock Solid, We did the 2019 revamp for the Rydges and QT hotel websites. I did most of the frontend work based on the given design from invision, I've also fixed some of the existing frontend visual issues on their other existing sites as well i.e. <a href=\"https://www.thredbo.com.au/\">Thredbo</a>, and lastly had a bit of a hand in the booking engine of the site but mostly in regards with the functionality of the booking form",
+    "contribution": "<p>Being an existing site when I got on board with Rock Solid, We did the 2019 revamp for the Rydges and QT hotel websites. I did most of the frontend work based on the given design from invision, I've also fixed some of the existing frontend visual issues on their other existing sites as well i.e. <a href=\"https://www.thredbo.com.au/\">Thredbo</a>, and lastly had a bit of a hand in the booking engine of the site but mostly in regards with the functionality of the booking form</p>",
     "images": {
       "base": "./images/works/mockup_base.jpg",
       "mock": "./images/works/rydges_mock.png",
@@ -81,7 +81,7 @@ export const WorkData = [
     "id": 7,
     "name": "Event Cinemas App",
     "description": "A cinema booking mobile application for <a href=\"https://apps.apple.com/au/app/event-cinemas/id299120285\">iOS</a> and <a href=\"https://play.google.com/store/apps/details?id=com.ahl.eventcinemas&hl=en&gl=US\">Android devices</a>. It lets the users browse movies and cinemas, purchase tickets, and order their snacks while watching. The application currently has a million installs across Australia and New Zealand.",
-    "contribution": "<p>This was a partnered development with our team, with us doing the mobile application part. The application was built using AngularJS and Ionic Framework. We did the revamp of the mobile application sometime in 2019 where we changed alot with the application flow from the ground up. I worked with not only the layout and styling but also the  of the application and how the data is pulled from the client's API and displayed on the application</p>",
+    "contribution": "<p>This was a partnered development (Web and Mobile) with Event Cinemas, with us doing the mobile application part. The application was built using AngularJS and Ionic Framework. We did the revamp of the mobile application sometime in 2019 where we changed alot with the application flow from the ground up. I worked with not only the layout and styling but also how the data is pulled from the client's API and displayed on the application</p>",
     "images": {
       "base": "",
       "mock": "./images/works/eventapp_mock.png",
