@@ -1,6 +1,14 @@
 .work-modal {
   @apply fixed w-screen h-screen inset-0 z-20 pointer-events-none opacity-0 duration-300;
 
+  p {
+    @apply indent-6;
+  }
+
+  a {
+    @apply text-gold-100 underline;
+  }
+
   .modal-wrapper {
     @apply absolute w-full h-full inset-0 bg-blue-400 bg-opacity-90 flex items-center justify-center p-6;
   }
@@ -59,6 +67,10 @@
     &:not(:first-child) {
       @apply border-l;
     }
+  }
+
+  .btn {
+    @apply no-underline;
   }
 
   &.show {

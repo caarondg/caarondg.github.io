@@ -84,14 +84,23 @@ section.sec-company {
   }
 
   .date {
-    @apply text-sm ml-8;
+    @apply text-sm ml-4;
 
     @screen lg {
-      @apply text-lg;
+      @apply text-lg ml-8;
     }
   }
 
   .contributions {
     @apply mt-6;
+  }
+
+  .office-logo {
+    max-width: 50px;
+
+    @screen lg {
+      max-width: 40px;
+      max-height: 40px;
+    }
   }
 }

@@ -11,12 +11,25 @@ const About = () => {
 
       <div className="container relative">
 
-        <h2 className="sr-item">Where I've worked</h2>
+        <h2 className="sr-item">Whom I've worked for</h2>
 
         <div className="offices-wrapper sr-group">
           <div className="office">
+            <a className="office-logo block lg:hidden mx-auto mb-4" href="https://www.rcksld.com/">
+              <img src="./images/company/rcksld.png" alt="" />
+            </a>
+
             <div className="header-wrapper">
-              <h3><a className="block" href="https://www.rcksld.com/">Rock Solid Digital</a></h3>
+              <div className="inline-flex items-center">
+                <a className='office-logo hidden lg:block lg:mr-4' href="https://www.rcksld.com/">
+                  <img src="./images/company/rcksld.png" alt="" />
+                </a>
+                <h3>
+                  <a href="https://www.rcksld.com/">
+                    Rock Solid Digital
+                  </a>
+                </h3>
+              </div>
 
               <div className="date">2017 - Present</div>
             </div>
@@ -30,8 +43,21 @@ const About = () => {
           </div>
 
           <div className="office">
+            <a className="office-logo block lg:hidden mx-auto mb-4" href="https://www.aqa.work/">
+              <img src="./images/company/wideout.png" alt="" />
+            </a>
+
             <div className="header-wrapper">
-              <h3><a className="block" href="https://www.aqa.work/">WideOut</a></h3>
+              <div className="inline-flex items-center">
+                <a className="office-logo hidden lg:block lg:mr-4" href="https://www.aqa.work/">
+                  <img src="./images/company/wideout.png" alt="" />
+                </a>
+                <h3>
+                  <a href="https://www.aqa.work/">
+                    WideOut
+                  </a>
+                </h3>
+              </div>
 
               <div className="date">2015 - 2017</div>
             </div>

@@ -6,7 +6,7 @@ section.sec-works {
   }
 
   .works-container {
-    @apply flex flex-wrap -mx-2;
+    @apply flex flex-wrap justify-center -mx-2;
 
     @screen lg {
       @apply -mx-4;

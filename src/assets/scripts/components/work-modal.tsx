@@ -1,4 +1,5 @@
 import * as React from 'react';
+import parse from 'html-react-parser';
 
 import WorkDataProps from '../interfaces/work-data-props'
 
@@ -41,12 +42,12 @@ const WorkModal: React.FC<WorkModalProps> = ({ handleModal, show, data }) => {
             <div className="p-4">
               <h3>{data.name}</h3>
 
-              { data.description && <div className="description my-4">{data.description}</div> }
+              { data.description && <div className="description my-4">{parse(data.description)}</div> }
 
               { data.contribution &&
                 <div className="contribution">
                   <div className="label">Contribution:</div>
-                  <div>{data.contribution}</div>
+                  <div>{parse(data.contribution)}</div>
                 </div>
               }
 

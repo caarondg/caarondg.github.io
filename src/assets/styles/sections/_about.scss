@@ -1,0 +1,31 @@
+section.sec-about {
+  @apply my-12;
+
+  @screen lg {
+    @apply my-32;
+  }
+
+  p {
+    @apply font-roboto-slab leading-normal text-xl;
+
+    @screen lg {
+      @apply text-4xl leading-normal;
+    }
+
+    &:not(:first-child) {
+      @apply mt-4;
+
+      @screen lg {
+        @apply mt-6;
+      }
+    }
+  }
+
+  .wrapper {
+    @apply text-center mx-auto;
+
+    @screen lg {
+      width: 60%;
+    }
+  }
+}

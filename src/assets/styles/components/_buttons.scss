@@ -1,5 +1,5 @@
 .btn {
-  @apply relative inline-flex items-center justify-center text-center uppercase tracking-widest font-roboto-slab font-bold text-sm text-white-100 bg-blue-400 border-t border-b border-gold-100 px-8 mx-6 duration-100;
+  @apply relative inline-flex items-center justify-center text-center uppercase tracking-widest font-roboto-slab font-bold text-sm text-white-100 bg-blue-400 border-t border-b border-gold-100 px-8 mx-6 duration-100 no-underline;
 
   height: 42px;
 

@@ -9,6 +9,7 @@ import "@fontsource/roboto-slab/300.css"
 // Sections
 import Overlay from './pages/overlay';
 import Hero from './pages/hero';
+import About from './pages/about';
 import Works from './pages/works';
 import Company from './pages/company';
 import Footer from './pages/footer';
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Hero />
+      <About />
       <Works />
       <Company />
       <Footer />
