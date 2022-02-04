@@ -1,13 +1,11 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      './src/**/*.html',
-      './src/**/*.js',
-      './src/**/*.jsx'
-    ],
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './src/**/*.html',
+    './src/**/*.js',
+    './src/**/*.jsx',
+    './src/**/*.tsx',
+  ],
+  media: false, // or 'media' or 'class'
   theme: {
     container: {
       center: true,
@@ -33,10 +31,12 @@ module.exports = {
         100: '#173159',
         200: '#264a6a',
         300: '#697a91',
+        400: '#182539',
       },
       gold: {
         100: '#b89a73',
       },
+      transparent: 'transparent',
     },
     extend: {
       zIndex: {
@@ -50,9 +50,6 @@ module.exports = {
         'gold-inset': 'inset 0 0 0 1px #b89a73',
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

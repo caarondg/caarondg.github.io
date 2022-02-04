@@ -1,0 +1,79 @@
+.work-modal {
+  @apply fixed w-screen h-screen inset-0 z-20 pointer-events-none opacity-0 duration-300;
+
+  p {
+    @apply indent-6;
+  }
+
+  a {
+    @apply text-gold-100 underline;
+  }
+
+  .modal-wrapper {
+    @apply absolute w-full h-full inset-0 bg-blue-400 bg-opacity-90 flex items-center justify-center p-6;
+  }
+
+  .modal-outer {
+    @apply w-full bg-black-200 text-white-100 p-4 rounded-xl;
+
+    max-width: 1000px;
+  }
+
+  .modal-inner {
+    @apply w-full;
+
+    max-height: 75vh;
+
+    @screen lg {
+      @supports (overflow-y: overlay) {
+        overflow-y: overlay;
+      }
+
+      @supports not (overflow-y: overlay) {
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .images-wrapper {
+    @apply relative w-full;
+  }
+
+  .base-image-wrapper {
+    @apply w-full h-full absolute inset-0;
+  }
+
+  .base-image {
+    @apply absolute w-full h-full inset-0 object-contain;
+  }
+
+  .mock-image-wrapper {
+    @apply relative w-full;
+
+    padding-bottom: 55%;
+  }
+
+  .mock-image {
+    @apply absolute w-full h-full inset-0 object-contain;
+  }
+
+  .technologies {
+    @apply flex justify-center my-4;
+  }
+
+  .tech {
+    @apply border-gold-100 px-4;
+
+    &:not(:first-child) {
+      @apply border-l;
+    }
+  }
+
+  .btn {
+    @apply no-underline;
+  }
+
+  &.show {
+    @apply opacity-100 pointer-events-auto;
+  }
+}

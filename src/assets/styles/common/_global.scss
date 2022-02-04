@@ -5,6 +5,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  @screen lg {
+    @supports (overflow-y: overlay) {
+      overflow-y: overlay;
+    }
+
+    @supports not (overflow-y: overlay) {
+      overflow-y: auto;
+    }
+  }
+}
+
 body {
   @apply font-roboto font-thin bg-black-300 text-gold-100;
 }
@@ -17,7 +29,7 @@ h4 {
 }
 
 h1 {
-  @apply text-6xl;
+  @apply text-4xl;
 
   @screen lg {
     @apply text-8xl;
@@ -25,7 +37,7 @@ h1 {
 }
 
 h2 {
-  @apply text-4xl;
+  @apply text-2xl;
 
   @screen lg {
     @apply text-6xl;
@@ -33,13 +45,49 @@ h2 {
 }
 
 h3 {
-  @apply text-3xl;
+  @apply text-lg;
 
   @screen lg {
     @apply text-4xl;
   }
 }
 
+ul {
+
+}
+
+li {
+  @apply relative pl-6;
+
+  &::before {
+    @apply absolute rounded-full border border-gold-100;
+
+    content: '';
+    width: 8px;
+    height: 8px;
+    left: 1px;
+    top: 7px;
+  }
+
+  &:not(:first-child) {
+    @apply mt-4;
+  }
+}
+
+.img-cover {
+  @apply absolute w-full h-full inset-0 object-cover;
+}
+
+.dimmer {
+  @apply absolute w-full h-full inset-0 bg-black-300 bg-opacity-10;
+}
+
 #app {
-  padding: 30px;
+  @apply overflow-hidden;
+
+  padding: 15px;
+
+  @screen lg {
+    padding: 30px;
+  }
 }

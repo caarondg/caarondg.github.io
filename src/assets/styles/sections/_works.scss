@@ -5,77 +5,76 @@ section.sec-works {
     @apply my-32;
   }
 
-  .side-title {
-    @apply w-full px-4;
+  .works-container {
+    @apply flex flex-wrap justify-center -mx-2;
 
     @screen lg {
-      @apply flex-shrink-0;
-
-      width: 250px;
+      @apply -mx-4;
     }
   }
 
-  .inner-title {
-    @apply font-roboto-slab text-6xl;
+  .work-item {
+    @apply w-1/2 px-2 my-2;
 
     @screen lg {
-      @apply transform rotate-90 origin-center whitespace-nowrap;
-
-      font-size: 13rem;
+      @apply w-1/4 px-4 my-4;
     }
   }
 
-  .side-content {
-    @apply w-full px-4;
-
-    @screen lg {
-      @apply w-1/2 flex-grow;
-    }
-  }
-
-  .tiles-wrapper {
-    @apply py-12 flex flex-wrap;
-
-    @screen lg {
-      @apply py-32;
-    }
-  }
-
-  .tile-inner {
-    @apply w-full;
-
-    padding-bottom: 100%;
-  }
-
-  .image-wrapper {
-    @apply absolute w-full h-full inset-0;
-  }
-
-  .image {
+  .preview-image-wrapper {
     @apply absolute w-full h-full inset-0 object-cover;
   }
 
-  .copy-wrapper {
-    @apply text-white-100 absolute w-full h-full inset-0 flex items-center justify-center p-4 z-5 opacity-0 pointer-events-none duration-300;
-  }
+  .card {
+    @apply block relative w-full bg-blue-200 shadow-lg cursor-pointer rounded-lg overflow-hidden;
 
-  .dimmer {
-    @apply bg-black-100 bg-opacity-70 absolute w-full h-full inset-0 z-1 opacity-0 duration-300;
-  }
+    padding-bottom: 100%;
 
-  .single-tile {
-    @apply relative w-full;
+    .preview-image-wrapper {
+      @apply absolute w-full h-full inset-0 duration-300 transform scale-100;
+    }
 
-    @screen lg {
-      @apply w-1/3;
+    .card-dimmer {
+      @apply absolute w-full h-full inset-0 bg-blue-100 bg-opacity-60 duration-300;
+
+      @screen lg {
+        @apply opacity-0 bg-opacity-80;
+      }
+    }
+
+    .card-border {
+      @apply absolute top-1/2 left-1/2 border border-gold-100 rounded-xl transform -translate-x-1/2 -translate-y-1/2 duration-300;
+
+      width: 90%;
+      height: 90%;
+
+      @screen lg {
+        @apply scale-90 opacity-0;
+      }
+    }
+
+    .card-name {
+      @apply absolute w-full h-full inset-0 flex items-center justify-center text-center text-white-100 duration-300 p-4;
+
+      @screen lg {
+        @apply p-8 opacity-0;
+      }
     }
 
     &:hover {
-      .dimmer {
+      .preview-image-wrapper {
+        @apply scale-105;
+      }
+
+      .card-dimmer {
         @apply opacity-100;
       }
 
-      .copy-wrapper {
+      .card-border {
+        @apply scale-100 opacity-100;
+      }
+
+      .card-name {
         @apply opacity-100;
       }
     }
