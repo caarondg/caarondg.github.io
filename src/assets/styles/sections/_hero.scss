@@ -1,5 +1,48 @@
 section.sec-hero {
-  @apply relative flex items-center justify-center;
+  @apply relative flex items-center justify-center overflow-visible;
 
-  height: calc(100vh - 60px);
+  height: 60vh;
+
+  @screen lg {
+    height: calc(100vh - 60px);
+  }
+
+  .heading-wrapper {
+    @apply inline-flex flex-col bg-blue-400 border border-gold-100 py-4 px-4;
+
+    @screen lg {
+      @apply px-12;
+    }
+  }
+
+  .background-image {
+    @apply absolute w-full h-full inset-0;
+  }
+
+  .gradient-dimmer {
+    @apply absolute w-full h-full bottom-0 left-0 bg-gradient-to-t from-black-300 to-transparent backdrop-blur-sm;
+  }
+
+  .graphic {
+    @apply absolute w-full h-full opacity-30 pointer-events-none;
+
+    right: -50%;
+    bottom: -20%;
+  }
+
+  .graphic-image {
+    @apply origin-center;
+
+    animation: 40s infinite linear rotation;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }

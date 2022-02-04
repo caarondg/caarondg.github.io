@@ -6,11 +6,17 @@
 // Common
 @import "./common/global";
 
+// Components
+@import "./components/buttons";
+@import "./components/scrollbars";
+
 // Partials
 @import "./partials/overlay";
 @import "./partials/footer";
+@import "./partials/work-modal";
 
 // Sections
 @import "./sections/hero";
 @import "./sections/about";
 @import "./sections/works";
+@import "./sections/company";
