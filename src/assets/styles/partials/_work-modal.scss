@@ -28,14 +28,12 @@
 
     max-height: 75vh;
 
-    @screen lg {
-      @supports (overflow-y: overlay) {
-        overflow-y: overlay;
-      }
+    @supports (overflow-y: overlay) {
+      overflow-y: overlay;
+    }
 
-      @supports not (overflow-y: overlay) {
-        overflow-y: auto;
-      }
+    @supports not (overflow-y: overlay) {
+      overflow-y: auto;
     }
   }
 
@@ -62,14 +60,18 @@
   }
 
   .technologies {
-    @apply flex justify-center my-4;
+    @apply flex flex-wrap justify-center;
   }
 
   .tech {
-    @apply border-gold-100 px-4;
+    @apply text-xs border-gold-100 px-4 my-4;
 
     &:not(:first-child) {
       @apply border-l;
+    }
+
+    @screen lg {
+      @apply text-base;
     }
   }
 

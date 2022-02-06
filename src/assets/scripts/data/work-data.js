@@ -28,7 +28,7 @@ export const WorkData = [
   {
     "id": 3,
     "name": "Rock Solid Digital",
-    "description": "<p>Website of my current company, This was made back in 2020 to showcase the capability of the team as well as touch on some newer technologies at that time. The site was made using ReactJS, Gatsby in a Headless Wordpress boilerplate. As a small site I did most of the development and styling. I also added in the the svg animations provided by our designer using Lottie</p>",
+    "description": "<p>Website of my current company, This was made back in 2020 to showcase the capability of the team as well as touch on some newer technologies at that time. The site was made using ReactJS, Gatsby in a Headless Wordpress boilerplate. As a small site we made it an SPA (Single page application). I did most of the development and styling and also added in the the svg animations provided by our designer using Lottie</p>",
     "contribution": "",
     "images": {
       "base": "./images/works/mockup_base.jpg",
