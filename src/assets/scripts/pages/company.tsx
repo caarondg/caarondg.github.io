@@ -15,6 +15,31 @@ const About = () => {
 
         <div className="offices-wrapper sr-group">
           <div className="office">
+            <a className="office-logo block lg:hidden mx-auto mb-4" href="https://www.infor.com/en-sg">
+              <img src="./images/company/infor.png" alt="" />
+            </a>
+
+            <div className="header-wrapper">
+              <div className="inline-flex items-center">
+                <a className='office-logo hidden lg:block lg:mr-4' href="https://www.infor.com/en-sg">
+                  <img src="./images/company/infor.png" alt="" />
+                </a>
+                <h3>
+                  <a href="https://www.infor.com/en-sg">
+                    Infor
+                  </a>
+                </h3>
+              </div>
+
+              <div className="date">2022 - Present</div>
+            </div>
+
+            <ul className="contributions">
+              <li>Working as a Software Engineer for one of their technologies</li>
+            </ul>
+          </div>
+
+          <div className="office">
             <a className="office-logo block lg:hidden mx-auto mb-4" href="https://www.rcksld.com/">
               <img src="./images/company/rcksld.png" alt="" />
             </a>
@@ -31,7 +56,7 @@ const About = () => {
                 </h3>
               </div>
 
-              <div className="date">2017 - Present</div>
+              <div className="date">2017 - 2022</div>
             </div>
 
             <ul className="contributions">

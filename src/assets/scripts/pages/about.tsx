@@ -5,13 +5,11 @@ const About = () => {
     <section className="sec-about">
       <div className="container">
         <div className="wrapper">
-          <p>4+ years of working experience in web development and mobile development with the frontend being my forte.</p>
+          <p>I'm Christopher Aaron De Guzman a Software Engineer with 2+ years of React applications development and 4+ years of working experience in web and mobile development</p>
 
-          <p>I have graduated in Mapua University, Philippines with a Bachelor's Degree in Information Technology.</p>
+          <p>Graduate of Mapua University, Philippines with a Bachelor's Degree in Information Technology.</p>
 
-          <p>Having a passion for tech and software development I continue to learn and improve as I go, so that I could leave a mark on the industry.</p>
-
-          <p>I am also into art and video games, but also spending my free time learning 日本語 and new tech stacks (currently Next.js, Vue.js, Ruby on Rails)</p>
+          <p>I'm into art, video games, and studying. Currently spending my free time learning 日本語 (JLPT N5 Certified; Taking N4 on July)</p>
         </div>
       </div>
     </section>

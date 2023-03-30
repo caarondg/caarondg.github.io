@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="container relative text-center lg:text-left">
         <div className="heading-wrapper sr-item">
           <h1 className="text-center">I'm Aaron.</h1>
-          <div className="font-roboto-slab text-center text-xl lg:text-5xl mt-2 mb-2 lg:mb-4">And I'm a Web Developer</div>
+          <div className="font-roboto-slab text-center text-xl lg:text-5xl mt-2 mb-2 lg:mb-4">And I'm a Software Engineer</div>
         </div>
       </div>
     </section>
